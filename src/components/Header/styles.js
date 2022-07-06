@@ -11,8 +11,9 @@ const SHeader = styled.header`
   justify-content: space-around;
   background: #00DBAF;
   align-items: center;
-  height: 10%;
+  position: fixed-top;
   text-decoration: none;
+  margin-top: 0;
    
   ${media.desktop} {
     height: 100px;

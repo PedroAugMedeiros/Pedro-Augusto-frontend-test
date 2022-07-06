@@ -7,31 +7,33 @@ const media = {
 
 export const HomeContainer = styled.div`
 background-color: rgb(32, 35, 41);
+margin: 0;
 ${media.desktop} {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  margin-bottom: 100%;
+  margin-bottom: 500%;
+  border-bottom: solid 300% blue;
 }
 `;
 
 export const Home = styled.div`
-
+margin: 0;
 ${media.desktop} {
   display: flex;
   flex-flow: row wrap;
   width: 20%;
 }   
 
-  padding: 0;
-  margin: 0;
+ 
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   background: rgb(32, 35, 41);
-  
+  padding: 0;
+  margin: 0;
   .character-card {
     background: rgb(60, 62, 68);
     width: 80%;

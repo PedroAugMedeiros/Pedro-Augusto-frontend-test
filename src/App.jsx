@@ -1,4 +1,5 @@
 import * as C from './App.styles';
+import './index.css';
 import {
   useLocation,
   Routes,
@@ -16,7 +17,7 @@ function App() {
   return (
     <C.Container>
         <Header />
-       { location.pathname !== '/Details'? <SearchArea /> : null}  
+       { location.pathname !== '/Details'? <SearchArea /> : <DetailsCaracther /> }  
           <Routes> 
       <Route path="*" element={ <NotFound /> } />
       <Route exact path="/" element={ <Home />} />
